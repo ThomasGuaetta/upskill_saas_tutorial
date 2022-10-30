@@ -49,6 +49,9 @@ gem "sassc-rails"
 # Use Twitter Bootstrap library for front-end UI and layout
 gem 'bootstrap-sass'
 
+#Needed for bootstrap
+gem 'jquery-rails'
+
 # Use font-awesome sass gem for adding icons
 gem "font-awesome-sass", "~> 6.2.0"
 
