@@ -26,9 +26,12 @@ h1, h2, h3 {
 }
 
 .navbar, .home-callout {
-  //Gradients provided by https://cssgradient.io
+  /*Gradients provided by https://cssgradient.io*/
   background: rgb(0,190,193);
-  background: linear-gradient(90deg, rgba(0,190,193,1) 0%, rgba(0,139,159,1) 50%, rgba(0,190,193,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(0,190,193,1) 0%, rgba(0,139,159,1) 50%, rgba(0,190,193,1) 100%);
+  background: -moz-linear-gradient(left, rgba(0,190,193,1) 0%, rgba(0,139,159,1) 50%, rgba(0,190,193,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,190,193,1) 0%, rgba(0,139,159,1) 50%, rgba(0,190,193,1) 100%);
+  background: linear-gradient(to right, rgba(0,190,193,1) 0%, rgba(0,139,159,1) 50%, rgba(0,190,193,1) 100%);
 }
 .navbar {
   border: none;
@@ -42,6 +45,20 @@ h1, h2, h3 {
   padding-bottom: 100px;
 }
 
-.navbar-brand, .navbar-nav>li>a{
- color: white !important; 
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+  opacity: 0.75;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  opacity: 0.75;
 }
