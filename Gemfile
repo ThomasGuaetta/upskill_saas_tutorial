@@ -9,7 +9,6 @@ gem "rails", "~> 7.0.4"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -54,6 +53,9 @@ gem 'jquery-rails'
 
 # Use font-awesome sass gem for adding icons
 gem "font-awesome-sass", "~> 6.2.0"
+
+# Use hirb for better database table display in console
+gem "hirb"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
