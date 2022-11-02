@@ -242,7 +242,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   jquery-rails
-  pg (= 0.18.4)
+  pg
   puma (~> 5.0)
   rails (~> 7.0.4)
   sassc-rails

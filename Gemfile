@@ -57,6 +57,7 @@ gem "font-awesome-sass", "~> 6.2.0"
 # Use hirb for better database table display in console
 gem "hirb"
 
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -77,7 +78,7 @@ end
 
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.18.4'
+  gem 'pg'
 end
 
 group :test do
