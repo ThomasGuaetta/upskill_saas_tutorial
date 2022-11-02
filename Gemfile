@@ -10,7 +10,7 @@ gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "puma"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -61,11 +61,11 @@ gem "hirb"
 gem 'bundler'
 
 
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   # Use sqlite3 as the database for Active Record (Upskill recommends 1.3.13, but only was able to get the site up on 1.5.3)
-  gem "sqlite3"
 end
 
 group :development do
@@ -81,7 +81,7 @@ end
 
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg'
+  # gem 'pg', '~> 1.4', '>= 1.4.4'
 end
 
 group :test do
