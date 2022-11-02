@@ -92,4 +92,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   config.hosts << "web-production-9cee.up.railway.app"
+  config.hosts << "42e6ba397db246ba8b6ea5b8941894ac.vfs.cloud9.us-east-2.amazonaws.com"
 end
