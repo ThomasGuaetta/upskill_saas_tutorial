@@ -235,6 +235,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap-sass
+  bundler
   capybara
   debug
   font-awesome-sass (~> 6.2.0)
