@@ -60,6 +60,8 @@ gem "hirb"
 #bundler
 gem 'bundler'
 
+#sqlite3
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 
 
 group :development, :test do
@@ -81,7 +83,7 @@ end
 
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  # gem 'pg', '~> 1.4', '>= 1.4.4'
+  gem 'pg'
 end
 
 group :test do
