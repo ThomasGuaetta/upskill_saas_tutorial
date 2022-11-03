@@ -1,7 +1,9 @@
-class ContactMailer < ApplicationMailer
-  def contact_email
-    @contact = params[:contact]
-
-    mail(to: ENV['ADMIN_EMAIL'], subject: "Contact Form Message")
+class ContactMailer < ActionMailer::Base
+  default to: 'instructors@upskillcourses.com'
+  def contact_email(name, email, body)
+    @name = name
+    @email = email
+    @body = body
+    mail(from: email, subject: 'Contact Form Message')
   end
 end

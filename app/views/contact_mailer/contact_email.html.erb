@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
+  <head></head>
   <body>
-    <p>You got a new message from <%= @contact.name %>!</p>
-    <p>
-    Message details<br>
-    --------------------------
-    </p>
-    <p>Name: <%= @contact.name %></p>
-    <p>Email: <%= @contact.email %></p>
-    <p>
-    Message:<br>
-    ----------
-    </p>
-    <p><%= @contact.body %></p>
+    <p>You have received a message from the site's contact form, from
+    <%= "#{ @name }, #{ @email }." %></p>
+    <p><%= @body %></p>
   </body>
 </html>
