@@ -70,10 +70,5 @@ Rails.application.configure do
   
   config.hosts << "web-production-9cee.up.railway.app"
   config.hosts << "42e6ba397db246ba8b6ea5b8941894ac.vfs.cloud9.us-east-2.amazonaws.com"
-  
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-    api_key: '31eedc68-45473f24',
-    domain: 'sandbox323d8aaa95df464281aaace298283af2.mailgun.org',
-  }
+
 end
