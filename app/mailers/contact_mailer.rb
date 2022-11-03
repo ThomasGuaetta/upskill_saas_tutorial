@@ -9,12 +9,12 @@ class ContactMailer < ActionMailer::Base
     mail(from: email, subject: 'Contact Form Message')
   end
   
-  def send_simple_message
-  	RestClient.post "https://api:YOUR_API_KEY"\
-  	"@api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages",
-  	:from => "Excited User <mailgun@YOUR_DOMAIN_NAME>"
-  	:to => "bar@example.com, YOU@YOUR_DOMAIN_NAME",
-  	:subject => "Hello",
-  	:text => "Testing some Mailgun awesomness!"
-  end
+  # def contact_email(name, email, body)
+  # 	RestClient.post "https://api:549ae7f0b2e242a05818707c198655c1-31eedc68-45473f24"\
+  # 	"@api.mailgun.net/v3/sandbox323d8aaa95df464281aaace298283af2.mailgun.org/messages",
+  # 	:from => email
+  # 	:to => "ThomasGuaetta@gmail.com",
+  # 	:subject => "Contact Form Message",
+  # 	:text => body
+  # end
 end
