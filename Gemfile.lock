@@ -94,6 +94,10 @@ GEM
       reline (>= 0.3.1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.11.0)
     execjs (2.8.1)
     ffi (1.15.5)
@@ -271,6 +275,8 @@ GEM
       unf_ext
     unf (0.1.4-java)
     unf_ext (0.0.8.2)
+    unf_ext (0.0.8.2-x64-mingw32)
+    unf_ext (0.0.8.2-x86-mingw32)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -303,6 +309,7 @@ DEPENDENCIES
   bundler
   capybara
   debug
+  dotenv-rails
   font-awesome-sass (~> 6.2.0)
   hirb
   importmap-rails
