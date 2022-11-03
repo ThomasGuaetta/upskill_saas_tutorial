@@ -63,6 +63,8 @@ gem 'bundler'
 #sqlite3
 gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 
+#MailGun
+gem 'mailgun-ruby', '~>1.2.5'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
