@@ -1,1 +1,1 @@
-web: sh -c 'bin/rails server -b 0.0.0.0 -p ${PORT:-3000}'
+web: sh -c 'rake db:migrate && RAILS_ENV=development rake db:migrate && bin/rails server -b 0.0.0.0 -p ${PORT:-3000}'
