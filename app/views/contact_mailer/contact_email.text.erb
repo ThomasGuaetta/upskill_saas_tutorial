@@ -1,0 +1,13 @@
+# app/views/order_mailer/new_order_email.text.erb
+
+You got a new message from <%= @contact.name %>!
+===============================================
+
+Message Details:
+--------------------------
+
+Name: <%= @contact.name %>
+Email: <%= @contact.email %>
+
+Message:
+<%= @contact.body %>

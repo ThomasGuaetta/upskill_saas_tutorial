@@ -91,16 +91,21 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   
-  #Action Mailer Configs for Google
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    port: 587,
-    address: 'smtp.gmail.com',
-    user_name: ENV['SMTP_USER_NAME'],
-    password: ENV['SMTP_PASSWORD'],
-    authentication: :plain,
-    enable_starttls_auto: true
-  }
+
+config.action_mailer.delivery_method = :smtp
+host = 'railway.app' #replace with your own url
+config.action_mailer.default_url_options = { host: host }
+
+# SMTP settings for gmail
+config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :user_name            => ENV['SMTP_USER_NAME'],
+  :password             => ENV['SMTP_PASSWORD'],
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+}
+  
   
   #Hosts for website URL
   config.hosts << "web-production-9cee.up.railway.app"
